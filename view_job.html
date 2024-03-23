@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>View Job</title>
     <link rel="stylesheet" href="newjob.css">
 </head>
+
 <body>
     <header class="header">
         <section class="flex">
@@ -21,21 +23,72 @@
             <a href="#" class="btn" style="margin-top:0;">job post</a>
         </section>
     </header>
-    <!-- header seaction -->
-    <!--account section section-->
-    <div class="account-form-container">
-    <section class="account-form">
-        <form action="" method="post">
-            <h3>Welcome back!</h3>
-            <input type="text" required name="name" maxlength="20" placeholder="Enter Your Name" class="input">
-            <input type="email" required name="pass" maxlength="50" placeholder="Enter Your Email" class="input">
-            <input type="password" required name="pass" maxlength="20" placeholder="Enter Your Password" class="input">
-            <p>Don't have an account?<a onclick="alert('register now')" href="register.html">register now</a></p>
-            <input type="submit" onclick="alert('login successfull')" value="login now" name="submit" class="btn">
+    <!-- header seaction ends-->
+   
+    <!--view job section starts-->
+    <section class="job-details">
+        <h1 class="heading">job details</h1>
+        <div class="details">
+            <div class="job-info">
+            <h3>senior web design</h3>
+            <a href="view_company.html">it infosys co.</a>
+            <p><i class="fas fa-map-marker-alt"></i>mumbai,india</p>
+        </div>
+        <div class="basic-details">
+            <h3>salary</h3>
+            <p>10000 -25000 per month</p>
+            <h3>benefits</h3>
+            <p>work from home, health insurance</p>
+            <h3>job type</h3>
+            <p>part-time</p>
+            <h3>schedule</h3>
+            <p>day shift</p>
+        </div>
+        <ul>
+            <h3>requirements</h3>
+            <li>education : <span>graduate</span></li>
+            <li>age : <span>25+</span></li>
+            <li>language : <span>hindi, english</span></li>
+            <li>experience : <span>3+ years</span></li>
+        </ul>
+        <ul>
+            <li>qualifications</li>
+            <li>bachelor's (Perferred)</li>
+            <li>PHP: 1year (Perferred)</li>
+            <li>web design: 1year (Perferred)</li>
+            <li>WordPress: 1year (Perferred)</li>
+            <li>total work : 3 years (Required)</li>
+        </ul>
+        <ul>
+            <h3>skills</h3>
+            <li>htmls and css3</li>
+            <li>javascript</li>
+            <li>node.js</li>
+            <li>react.js</li>
+            <li>php</li>
+            <li>mysql</li>
+        </ul>
+        <div class="description">
+            <h3>job description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae quisquam facilis magni! Ipsam nisi alias illo odit error voluptatibus.</p>
+            <ul>
+                <li>
+                    Hiring 2 candidate for this role
+                </li>
+                <li>posted 2 days ago</li>
+            </ul>
+        </div>
+        <form action="" method="post" class="flex-btn">
+            <input type="submit" value="apply now" name="apply" class="btn">
+            <button type="submit" class="save"><i class="far fa-heart"></i>save job</button>
+
         </form>
-    </section>
     </div>
-    <!--account section ends-->
+        </section>
+        
+    </div>
+    <!--view job section ends-->
+    <!--footer section starts-->
     <footer class="footer">
         <section class="grid">
             <div class="box">
@@ -88,12 +141,16 @@
                 <a href="#">
                     <i class="fab fa-youtube"></i> youtube
                 </a>
-                
-               
+
+
             </div>
-            
+
         </section>
         <div class="credit">&copy; copyright @ 2023 by <span>Mr. Jagan Pradhan</span>| All Right Reserved!|</div>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
